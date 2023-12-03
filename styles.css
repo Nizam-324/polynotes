@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 20px 60px;
+    background-color: #ffffff;
+}
+
+h1 {
+    /* color: #333; */
+    font-family: Ubuntu;
+    margin: 0px 10px;
+    font-size: 55px;
+     /* -webkit-text-stroke: 0.02em #333;
+  -webkit-text-fill-color: transparent; */
+  letter-spacing: 4px;
+}
+h1 span:nth-child(1){color: #e21401;}
+h1 span:nth-child(2){color: #ffa600;}
+h1 span:nth-child(3){color: #f9e000;}
+h1 span:nth-child(4){color: #3e9941;}
+h1 span:nth-child(5){color: #007de4;}
+h1 span:nth-child(6){color: #3f51b5;}
+h1 span:nth-child(7){color: #9c27b0;}
+
+h4{
+  margin: 0px 10px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.title{
+  width: fit-content;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 14px 18px;
+    margin: 12px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    font-weight: 600;
+    background-color: #ffffff; 
+}
+#deptList{
+  width: 45%;
+  margin: 30px 0;
+}
+
+#deptList li:nth-child(1) {
+    color: #e21401;
+    background-color: #ff150078;
+  }
+  
+#deptList  li:nth-child(2) {
+    color: #ffa600; /* Google Orange */
+    background-color: #ffa60072; /* Google Orange */
+  }
+  
+#deptList li:nth-child(3) {
+    color: #e5ce00; /* Google Yellow */
+    background-color: #fee81e65; /* Google Yellow */
+  }
+  
+#deptList li:nth-child(4) {
+    color: #3e9941; /* Google Green */
+    background-color: #4caf4f62; /* Google Green */
+  }
+  
+#deptList li:nth-child(5) {
+    color: #007de4; /* Google Blue */
+    background-color: #2195f358; /* Google Blue */
+  }
+  
+#deptList li:nth-child(6) {
+    color: #3f51b5;
+    background-color: #0e25a563;
+  }
+
+#deptList li:nth-child(7) {
+    color: #9c27b0; /* Google Violet */
+    background-color: #84009b53; /* Google Violet */
+  }
+
+#deptList li:hover {
+    background-color: #fff;
+}
+
+#semesterModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  overflow-y: auto;
+  z-index: 1;
+  border-radius: 50px 0 0 50px;
+  /* padding: 10px 0; */
+}
+
+#semesterList {
+  padding: 20px;
+  width: 75%;
+  margin: 30px auto;
+}
+
+/* #semesterList li{color: #fff;} */
+
+#semesterList li:hover{
+  background-color: #333;
+}
+
+#closeSemesterModal {
+  display: none;
+  margin: auto 14%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bolder;
+  width: fit-content;
+  color: #333;
+  background-color: #fff;
+  padding: 6px 18px;
+  border-radius: 24px;
+}
+#closeSemesterModal:hover{
+  background-color: #555;
+  color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    margin: 20px;
+  }
+
+  h1{font-size: 48px;}
+  h1, h4{letter-spacing: 0;}
+
+  li{
+    margin: 12px 4px;
+  }
+
+  #deptList{width: 100%;}
+
+  #semesterModal{
+    top: 30%;
+    height: 70%;
+    width: 100%;
+    border-radius: 28px 28px 0 0;
+  }
+
+  #semesterList {
+    width: auto;
+  }
+  #closeSemesterModal{
+    margin: auto 30px;
+    display: unset;
+  }
+}

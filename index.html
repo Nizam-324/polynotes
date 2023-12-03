@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Study Notes</title>
+</head>
+<body>
+    <div class="title">
+        <h1><span>S</span><span>S</span><span>M</span><span>P</span><span>O</span><span>L</span><span>Y</span></h1>
+        <h4>Study Materials REV 21</h4>
+    </div>
+    
+    <ul id="deptList">
+        <!-- Automobile Department -->
+        <li onclick="showSemesters('General')">General Department<span class="material-symbols-outlined">chevron_right</span></li>
+        <li onclick="showSemesters('Automobile')">Automobile Engineering<span class="material-symbols-outlined">chevron_right</span></li>
+        <li onclick="showSemesters('Civil')">Civil Engineering<span class="material-symbols-outlined">chevron_right</span></li>
+        <li onclick="showSemesters('Computer')">Computer Engineering<span class="material-symbols-outlined">chevron_right</span></li>
+        <li onclick="showSemesters('Electrical_&_Electronics')">Electrical & Electronics Engineering<span class="material-symbols-outlined">chevron_right</span></li>
+        <li onclick="showSemesters('Electronics')">Electronics Engineering<span class="material-symbols-outlined">chevron_right</span></li>
+        <li onclick="showSemesters('Mechanical')">Mechanical Engineering<span class="material-symbols-outlined">chevron_right</span></li>
+    </ul>
+
+    <div id="semesterModal">
+        <ul id="semesterList"></ul>
+        <div id="closeSemesterModal" onclick="closeSemesterModal()">Close</div>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the element with the ID "Deptlist" (replace with the actual ID of your element)
+            var pageTitleElement = document.getElementById('deptList');
+            // Replace underscores with spaces in the element's text content
+            pageTitleElement.textContent = pageTitleElement.textContent.replace(/_/g, ' ');
+    
+            // Get the element with the ID "semesterList" (replace with the actual ID of your element)
+            var subjectListElement = document.getElementById('semesterList');
+            // Replace underscores with spaces in the element's text content
+            subjectListElement.textContent = subjectListElement.textContent.replace(/_/g, ' ');
+        });
+    </script> -->
+    
+</body>
+</html>
